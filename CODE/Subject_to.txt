@@ -1,0 +1,18 @@
+subject to {
+  
+  // Capacity constraints for each refinery
+  capacityCT: forall(r in Refineries){
+    sum(p in Products) production_vars[p][ref] <= capacities[ref];
+  							};
+
+  // Demand satisfaction constraints for each product in each region
+  demandCT: forall(p in Products, region in Refineries){
+    sum(r in Refineries) production_vars[p][r] >= demands[p][region];
+  };
+
+  // Crude oil transportation constraints (transported crude does not exceed purchased crude)
+  transportCT: forall(crude in Crudes){
+    sum(ref in Refineries) crude_shipping_vars[crude][ref] <= purchase_vars[crude];
+  };
+  
+};
