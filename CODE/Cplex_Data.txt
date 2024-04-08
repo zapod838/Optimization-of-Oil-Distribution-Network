@@ -1,0 +1,149 @@
+/*********************************************
+ * OPL 22.1.1.0 Data
+ * Author: LastC
+ * Creation Date: 8 Apr 2024 at 14:30:46
+ *********************************************/
+
+// Products being refined and sold
+Products = {"Gasoline-87", "Gasoline-89", "Gasoline-92", "Jet fuel", "Diesel fuel", "Heating oil"};
+
+// Sources of crude oil
+Crudes = {"Azeri BTC", "Poseidon Streams", "Laguna", "Snøhvit Condensate"};
+
+// Refineries, indexed by location
+Refineries = {"Greece", "Poland", "Spain", "UK"};
+
+// Tanker classes used for transporting crude
+Tankers = {"GPT", "MRT", "LR1", "LR2"};
+
+// Ports of sale
+Ports = {"Ceyhan", "Houma", "Puerto Miranda", "Melkoya"};
+
+
+processingCost = 19;
+
+crudes = {
+    <"Azeri BTC", 57>,
+    <"Poseidon Streams", 48>,
+    <"Laguna", 35>,
+    <"Snøhvit Condensate", 71>
+};
+
+prices = {
+    <"Gasoline-87", 90.45>,
+    <"Gasoline-89", 93.66>,
+    <"Gasoline-92", 95.50>,
+    <"Jet fuel", 61.25>,
+    <"Diesel fuel", 101.64>,
+    <"Heating oil", 66.36>
+};
+
+capacities = {
+    <"Greece", 400000>,
+    <"Poland", 540000>,
+    <"Spain", 625000>, // Removed the comma
+    <"UK", 735000>
+};
+
+demands = {
+    <"Gasoline-87", "Greece", 35000>,
+    <"Gasoline-87", "Poland", 22000>,
+    <"Gasoline-87", "Spain", 76000>,
+    <"Gasoline-87", "UK", 98000>,
+    <"Gasoline-89", "Greece", 45000>,
+    <"Gasoline-89", "Poland", 38000>,
+    <"Gasoline-89", "Spain", 103000>,
+    <"Gasoline-89", "UK", 52000>,
+    <"Gasoline-92", "Greece", 50000>,
+    <"Gasoline-92", "Poland", 60000>,
+    <"Gasoline-92", "Spain", 83000>,
+    <"Gasoline-92", "UK", 223000>,
+    <"Jet fuel", "Greece", 20000>,
+    <"Jet fuel", "Poland", 25000>,
+    <"Jet fuel", "Spain", 47000>,
+    <"Jet fuel", "UK", 127000>,
+    <"Diesel fuel", "Greece", 75000>,
+    <"Diesel fuel", "Poland", 35000>,
+    <"Diesel fuel", "Spain", 125000>,
+    <"Diesel fuel", "UK", 87000>,
+    <"Heating oil", "Greece", 25000>,
+    <"Heating oil", "Poland", 205000>,
+    <"Heating oil", "Spain", 30000>,
+    <"Heating oil", "UK", 13000>
+};
+
+# Tanker data
+tanker_rates = {
+    <"GPT", "Gudrun", 13000>,
+    <"GPT", "Ingeborg", 22000>,
+    <"GPT", "Valborg", 20000>,
+    <"GPT", "Estrid", 15000>,
+    <"GPT", "Rose", 14000>,
+    <"GPT", "Cork Cat", 23000>,
+    <"GPT", "Guam", 21000>,
+    <"GPT", "Chance", 16000>,
+    <"MRT", "Ismine", 25000>,
+    <"MRT", "Signe", 27000>,
+    <"MRT", "Venture", 23000>,
+    <"MRT", "Pretty World", 25000>,
+    <"MRT", "Viking", 26000>,
+    <"MRT", "Limerick", 28000>,
+    <"MRT", "York Gulls", 25000>,
+    <"MRT", "Lancaster", 26000>,
+    <"LR1", "PTI Volans", 30000>,
+    <"LR1", "Trinity", 32000>,
+    <"LR1", "Galway", 31000>,
+    <"LR1", "Glasgow", 33000>,
+    <"LR2", "Garonne", 41000>,
+    <"LR2", "Torm Rhone", 44000>,
+    <"LR2", "Thorpe", 51000>,
+    <"LR2", "Venus", 56000>
+};
+
+port_charges = {
+    <"Ceyhan", "GPT", 109000>,
+    <"Ceyhan", "MRT", 112000>,
+    <"Ceyhan", "LR1", 124000>,
+    <"Ceyhan", "LR2", 135000>,
+    <"Houma", "GPT", 111000>,
+    <"Houma", "MRT", 114000>,
+    <"Houma", "LR1", 138000>,
+    <"Houma", "LR2", 159000>,
+    <"Puerto Miranda", "GPT", 135000>,
+    <"Puerto Miranda", "MRT", 147000>,
+    <"Puerto Miranda", "LR1", 158000>,
+    <"Puerto Miranda", "LR2", 169000>,
+    <"Melkoya", "GPT", 136000>,
+    <"Melkoya", "MRT", 147000>,
+    <"Melkoya", "LR1", 156000>,
+    <"Melkoya", "LR2", 177000>
+};
+
+# Fuel costs
+fuel_costs = {
+    <"GPT", 2500>,
+    <"MRT", 2750>,
+    <"LR1", 3000>,
+    <"LR2", 3250>
+};
+
+# Shipping times in days
+shipping_times = {
+    <"Ceyhan", "Greece", 2>,
+    <"Ceyhan", "Poland", 15>,
+    <"Ceyhan", "Spain", 8>,
+    <"Ceyhan", "UK", 12>,
+    <"Houma", "Greece", 20>,
+    <"Houma", "Poland", 18>,
+    <"Houma", "Spain", 16>,
+    <"Houma", "UK", 15>,
+    <"Puerto Miranda", "Greece", 19>,
+    <"Puerto Miranda", "Poland", 20>,
+    <"Puerto Miranda", "Spain", 14>,
+    <"Puerto Miranda", "UK", 15>,
+    <"Melkoya", "Greece", 11>,
+    <"Melkoya", "Poland", 3>,
+    <"Melkoya", "Spain", 4>,
+    <"Melkoya", "UK", 3>
+};
+

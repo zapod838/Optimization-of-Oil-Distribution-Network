@@ -1,0 +1,74 @@
+/*********************************************
+ * OPL 22.1.1.0 Model
+ * Author: LastC
+ * Creation Date: 8 Apr 2024 at 14:30:46
+ *********************************************/
+
+// Indices for the products, crudes, refineries, tankers, and ports of sale
+range Products = ...; // Define the range based on the number of products
+range Crudes = ...; // Define the range based on the number of crudes
+range Refineries = ...; // Define the range based on the number of refineries
+range Tankers = ...; // Define the range based on the number of tanker classes
+range Ports = ...; // Define the range based on the number of ports
+
+// Parameters 
+float processingCost = ...; // Assign the processing cost
+tuple crudeInfo {string name; float cost;}
+{crudeInfo} crudes = ...; // Assign the set of crude types and their costs
+tuple priceInfo {string name; float price;}
+{priceInfo} prices = ...; // Assign the set of product types and their prices
+float capacities[Refineries] = ...; // Assign the capacities for each refinery
+tuple demandInfo {string product; string refinery; float demand;}
+{demandInfo} demands = ...; // Assign the set of demands for each product at each refinery
+
+tuple tankerRateInfo {string class; string tanker; float rate;}
+{tankerRateInfo} tankerRates = ...; // Assign the set of tanker rates by class and tanker
+tuple portChargeInfo {string port; string class; float charge;}
+{portChargeInfo} portCharges = ...; // Assign the set of port charges by port and class
+float fuelCosts[Tankers] = ...; // Assign the fuel costs per hour for each tanker class
+tuple shippingTimeInfo {string port; string refinery; int days;}
+{shippingTimeInfo} shippingTimes = ...; // Assign the shipping times in days for each port to each refinery
+
+// Conversion of shipping times to hours
+int shipping_hours[Ports][Refineries] = [p in Ports][r in Refineries](shippingTimes[p][r].days * 24);
+
+// Decision variables
+dvar float+ purchase[Crudes]; // Quantities of crude oil to purchase
+dvar float+ produce[Products][Refineries]; // Quantities of products to produce at each refinery
+dvar float+ shipCrude[Crudes][Refineries]; // Quantities of crude oil to ship to each refinery
+
+// Objective function: Maximize profit
+maximize
+    sum(p in Products, r in Refineries) prices[p].price * produce[p][r] - // Revenue from selling products
+    sum(c in Crudes) crudes[c].cost * purchase[c] - // Cost of purchasing crude
+    sum(p in Products, r in Refineries) processingCost * produce[p][r] - // Cost of processing
+    sum(c in Crudes, r in Refineries, t in Tankers) 
+        (tankerRates[t].rate + portCharges[t.class][t.port].charge + fuelCosts[t.class] * shipping_hours[t.port][r]) * shipCrude[c][r]; // Transportation cost
+
+// Constraints
+// Constraints
+foreach (ref in Refineries) {
+    // Capacity constraints
+    subject to capacity_[ref]:
+        sum(p in Products) produce[p][ref] <= capacities[ref];
+}
+
+
+foreach (p in Products) {
+    foreach (ref in Refineries) {
+        // Demand satisfaction constraints
+        subject to demand_[p][ref]:
+            produce[p][ref] >= demands[p][ref].demand; // Corrected to use 'produce[p][ref]' directly and 'demands[p][ref].demand' for demand
+    }
+}
+
+foreach (c in Crudes) {
+    // Crude oil transportation constraints (transported crude does not exceed purchased crude)
+    subject to transport_[c]:
+        sum(r in Refineries) shipCrude[c][r] <= purchase[c];
+        }
+
+
+// Solving the model and outputting results will be handled externally,
+// typically in a script or using OPL's post-processing capabilities.
+ 
