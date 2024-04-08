@@ -1,0 +1,35 @@
+// Indices for the products, crudes, refineries, tankers, and ports of sale
+range Products = ...; // Define the range based on the number of products
+range Crudes = ...; // Define the range based on the number of crudes
+range Refineries = ...; // Define the range based on the number of refineries
+range Tankers = ...; // Define the range based on the number of tanker classes
+range Ports = ...; // Define the range based on the number of ports
+
+// Parameters 
+float processingCost = ...; // Assign the processing cost
+tuple crudeInfo {string name; float cost;}
+{crudeInfo} crudes = ...; // Assign the set of crude types and their costs
+tuple priceInfo {string name; float price;}
+{priceInfo} prices = ...; // Assign the set of product types and their prices
+float capacities[Refineries] = ...; // Assign the capacities for each refinery
+tuple demandInfo {string product; string refinery; float demand;}
+{demandInfo} demands = ...; // Assign the set of demands for each product at each refinery
+
+tuple tankerRateInfo {string class; string tanker; float rate;}
+{tankerRateInfo} tankerRates = ...; // Assign the set of tanker rates by class and tanker
+tuple portChargeInfo {string port; string class; float charge;}
+{portChargeInfo} portCharges = ...; // Assign the set of port charges by port and class
+float fuelCosts[Tankers] = ...; // Assign the fuel costs per hour for each tanker class
+tuple shippingTimeInfo {string port; string refinery; int days;}
+{shippingTimeInfo} shippingTimes = ...; // Assign the shipping times in days for each port to each refinery
+
+// Conversion of shipping times to hours
+int shipping_hours[Ports][Refineries] = ...;
+
+execute {
+  for (var p in Ports) {
+    for (var r in Refineries) {
+      shipping_hours[p][r] = shippingTimes[p][r].days * 24;
+    }
+  }
+}
