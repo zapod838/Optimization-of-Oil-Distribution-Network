@@ -1,0 +1,56 @@
+from docplex.mp.model import Model
+import itertools
+
+def find_best_combination(max_weights, target_capacity, lower_bounds, upper_bounds):
+    mdl = Model("Best_Combination")
+
+    # Decision variables
+    transport_vars = mdl.binary_var_list(len(max_weights), name="transport")
+
+    # Objective: minimize the total score
+    mdl.minimize(mdl.sum(transport_vars[i] * max_weights[i] for i in range(len(max_weights))))
+
+    # Constraint: total capacity should be at least the target capacity
+    mdl.add_constraint(mdl.sum(transport_vars[i] * max_weights[i] for i in range(len(max_weights))) >= target_capacity)
+
+    # Constraint: select exactly 4 transport options
+    mdl.add_constraint(mdl.sum(transport_vars) == 4)
+
+    # Constraint: apply lower and upper bounds
+    for i in range(len(max_weights)):
+        mdl.add_constraint(transport_vars[i] * max_weights[i] >= lower_bounds[i])
+        mdl.add_constraint(transport_vars[i] * max_weights[i] <= upper_bounds[i])
+
+    # Solve the model
+    solution = mdl.solve()
+
+    if solution:
+        selected_indices = [i for i in range(len(max_weights)) if transport_vars[i].solution_value == 1]
+        selected_weights = [max_weights[i] for i in selected_indices]
+        return selected_weights
+    else:
+        return None
+
+# Given data
+Max_Weights = [84000, 101400, 141115, 146523, 173225, 188857, 205335, 211250]
+target_capacity = 550000
+lower_bounds = [62500, 96250, 116000, 150000]
+upper_bounds = [100000, 135000, 156000, 183750]
+
+# Find all combinations of 4 weights satisfying the bounds
+valid_combinations = itertools.product(*[range(lb, ub+1) for lb, ub in zip(lower_bounds, upper_bounds)])
+
+# Find the best combination with the lowest total score
+best_combination = None
+min_total_score = float('inf')
+
+for combination in valid_combinations:
+    total_score = sum(combination)
+    if total_score >= target_capacity and total_score < min_total_score:
+        best_combination = combination
+        min_total_score = total_score
+
+if best_combination:
+    print("Best combination of 4 weights:", best_combination)
+else:
+    print("No solution found.")
