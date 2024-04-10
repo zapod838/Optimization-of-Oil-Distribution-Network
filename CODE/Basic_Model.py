@@ -7,7 +7,6 @@ mdl = Model("ABSA_Oil")
 costs = {
     "processing": 19,
     "crude": {"Azeri BTC": 57, "Poseidon Streams": 48, "Laguna": 35, "Snøhvit Condensate": 71},
-    # Removed old transport costs since we will use detailed tanker rates and other costs
     }
 
 prices = {
@@ -43,7 +42,6 @@ demands = {
     "Heating oil": {"Greece": 25000, "Poland": 205000, "Spain": 30000, "UK": 13000}
     }
 
-
 # Decision Variables
 purchase_vars = mdl.continuous_var_dict(costs["crude"].keys(), name="purchase")
 production_vars = mdl.continuous_var_matrix(prices.keys(), capacities.keys(), name="produce")
@@ -54,8 +52,8 @@ crude_cost = mdl.sum(costs["crude"][crude] * purchase_vars[crude] for crude in c
 production_cost = mdl.sum(costs["processing"] * production_vars[prod, ref] for prod in prices for ref in capacities)
 mdl.maximize(revenue - crude_cost - production_cost)
 
-# Constraints
 
+# Constraints
 # 1. Production meets or exceeds demand in each region for each product
 for prod, regions in demands.items():
     for region, demand in regions.items():
