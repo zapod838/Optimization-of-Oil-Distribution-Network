@@ -1,0 +1,6 @@
+capacities = {
+    "UK": 735000,
+    "Spain": 625000,
+    "Poland": 540000,
+    "Greece": 400000,
+    }
