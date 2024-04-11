@@ -4,3 +4,10 @@ capacities = {
     "Poland": 540000,
     "Greece": 400000,
     }
+
+if solution.get_values(var_name) > 0.5:
+                            # Quantity required for the destination
+                            quantity = quantities_per_destination[destination]
+                            route_cost = costs_and_capacities[var_name][0]  # Get the route cost from the dictionary
+                            print(f"From {port}, Tanker {tanker} to {destination}, transporting {quantity} barrels. Cost: {route_cost}")
+                            found_solution = True
