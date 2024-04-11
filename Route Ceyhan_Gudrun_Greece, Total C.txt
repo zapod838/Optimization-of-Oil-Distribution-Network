@@ -1,0 +1,96 @@
+Route: Ceyhan_Gudrun_Greece, Total Cost: 8079500
+Route: Ceyhan_Gudrun_Poland, Total Cost: 8859500
+Route: Ceyhan_Gudrun_Spain, Total Cost: 8439500
+Route: Ceyhan_Gudrun_UK, Total Cost: 8679500
+Route: Ceyhan_Ingeborg_Greece, Total Cost: 8088500
+Route: Ceyhan_Ingeborg_Poland, Total Cost: 8868500
+Route: Ceyhan_Ingeborg_Spain, Total Cost: 8448500
+Route: Ceyhan_Ingeborg_UK, Total Cost: 8688500
+Route: Ceyhan_Valborg_Greece, Total Cost: 8086500
+Route: Ceyhan_Valborg_Poland, Total Cost: 8866500
+Route: Ceyhan_Valborg_Spain, Total Cost: 8446500
+Route: Ceyhan_Valborg_UK, Total Cost: 8686500
+Route: Ceyhan_Estrid_Greece, Total Cost: 8081500
+Route: Ceyhan_Estrid_Poland, Total Cost: 8861500
+Route: Ceyhan_Estrid_Spain, Total Cost: 8441500
+Route: Ceyhan_Estrid_UK, Total Cost: 8681500
+Route: Ceyhan_Rose_Greece, Total Cost: 8080500
+Route: Ceyhan_Rose_Poland, Total Cost: 8860500
+Route: Ceyhan_Rose_Spain, Total Cost: 8440500
+Route: Ceyhan_Rose_UK, Total Cost: 8680500
+Route: Ceyhan_Cork Cat_Greece, Total Cost: 8089500
+Route: Ceyhan_Cork Cat_Poland, Total Cost: 8869500
+Route: Ceyhan_Cork Cat_Spain, Total Cost: 8449500
+Route: Ceyhan_Cork Cat_UK, Total Cost: 8689500
+Route: Ceyhan_Guam_Greece, Total Cost: 8087500
+Route: Ceyhan_Guam_Poland, Total Cost: 8867500
+Route: Ceyhan_Guam_Spain, Total Cost: 8447500
+Route: Ceyhan_Guam_UK, Total Cost: 8687500
+Route: Ceyhan_Chance_Greece, Total Cost: 8082500
+Route: Ceyhan_Chance_Poland, Total Cost: 8862500
+Route: Ceyhan_Chance_Spain, Total Cost: 8442500
+Route: Ceyhan_Chance_UK, Total Cost: 8682500
+Route: Houma_Ismine_Greece, Total Cost: 8059000
+Route: Houma_Ismine_Poland, Total Cost: 7927000
+Route: Houma_Ismine_Spain, Total Cost: 7795000
+Route: Houma_Ismine_UK, Total Cost: 7729000
+Route: Houma_Signe_Greece, Total Cost: 8061000
+Route: Houma_Signe_Poland, Total Cost: 7929000
+Route: Houma_Signe_Spain, Total Cost: 7797000
+Route: Houma_Signe_UK, Total Cost: 7731000
+Route: Houma_Venture_Greece, Total Cost: 8057000
+Route: Houma_Venture_Poland, Total Cost: 7925000
+Route: Houma_Venture_Spain, Total Cost: 7793000
+Route: Houma_Venture_UK, Total Cost: 7727000
+Route: Houma_Pretty World_Greece, Total Cost: 8059000
+Route: Houma_Pretty World_Poland, Total Cost: 7927000
+Route: Houma_Pretty World_Spain, Total Cost: 7795000
+Route: Houma_Pretty World_UK, Total Cost: 7729000
+Route: Houma_Viking_Greece, Total Cost: 8060000
+Route: Houma_Viking_Poland, Total Cost: 7928000
+Route: Houma_Viking_Spain, Total Cost: 7796000
+Route: Houma_Viking_UK, Total Cost: 7730000
+Route: Houma_Limerick_Greece, Total Cost: 8062000
+Route: Houma_Limerick_Poland, Total Cost: 7930000
+Route: Houma_Limerick_Spain, Total Cost: 7798000
+Route: Houma_Limerick_UK, Total Cost: 7732000
+Route: Houma_York Gulls_Greece, Total Cost: 8059000
+Route: Houma_York Gulls_Poland, Total Cost: 7927000
+Route: Houma_York Gulls_Spain, Total Cost: 7795000
+Route: Houma_York Gulls_UK, Total Cost: 7729000
+Route: Houma_Lancaster_Greece, Total Cost: 8060000
+Route: Houma_Lancaster_Poland, Total Cost: 7928000
+Route: Houma_Lancaster_Spain, Total Cost: 7796000
+Route: Houma_Lancaster_UK, Total Cost: 7730000
+Route: Puerto Miranda_PTI Volans_Greece, Total Cost: 6368500
+Route: Puerto Miranda_PTI Volans_Poland, Total Cost: 6440500
+Route: Puerto Miranda_PTI Volans_Spain, Total Cost: 6008500
+Route: Puerto Miranda_PTI Volans_UK, Total Cost: 6080500
+Route: Puerto Miranda_Trinity_Greece, Total Cost: 6370500
+Route: Puerto Miranda_Trinity_Poland, Total Cost: 6442500
+Route: Puerto Miranda_Trinity_Spain, Total Cost: 6010500
+Route: Puerto Miranda_Trinity_UK, Total Cost: 6082500
+Route: Puerto Miranda_Galway_Greece, Total Cost: 6369500
+Route: Puerto Miranda_Galway_Poland, Total Cost: 6441500
+Route: Puerto Miranda_Galway_Spain, Total Cost: 6009500
+Route: Puerto Miranda_Galway_UK, Total Cost: 6081500
+Route: Puerto Miranda_Glasgow_Greece, Total Cost: 6371500
+Route: Puerto Miranda_Glasgow_Poland, Total Cost: 6443500
+Route: Puerto Miranda_Glasgow_Spain, Total Cost: 6011500
+Route: Puerto Miranda_Glasgow_UK, Total Cost: 6083500
+Route: Melkoya_Garonne_Greece, Total Cost: 10838500
+Route: Melkoya_Garonne_Poland, Total Cost: 10214500
+Route: Melkoya_Garonne_Spain, Total Cost: 10292500
+Route: Melkoya_Garonne_UK, Total Cost: 10214500
+Route: Melkoya_Torm Rhone_Greece, Total Cost: 10841500
+Route: Melkoya_Torm Rhone_Poland, Total Cost: 10217500
+Route: Melkoya_Torm Rhone_Spain, Total Cost: 10295500
+Route: Melkoya_Torm Rhone_UK, Total Cost: 10217500
+Route: Melkoya_Thorpe_Greece, Total Cost: 10848500
+Route: Melkoya_Thorpe_Poland, Total Cost: 10224500
+Route: Melkoya_Thorpe_Spain, Total Cost: 10302500
+Route: Melkoya_Thorpe_UK, Total Cost: 10224500
+Route: Melkoya_Venus_Greece, Total Cost: 10853500
+Route: Melkoya_Venus_Poland, Total Cost: 10229500
+Route: Melkoya_Venus_Spain, Total Cost: 10307500
+Route: Melkoya_Venus_UK, Total Cost: 10229500
