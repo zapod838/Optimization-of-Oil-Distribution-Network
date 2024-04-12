@@ -1,0 +1,18 @@
+Total cost of the solution: 16029000
+Solution status =  101
+From Puerto Miranda, Tanker Gudrun to Greece, transporting 75000 barrels with shipping cost: 1288000
+From Puerto Miranda, Tanker Ingeborg to Spain, transporting 156250 barrels with shipping cost: 997000
+From Melkoya, Tanker Cork Cat to Spain, transporting 156250 barrels with shipping cost: 399000
+From Houma, Tanker Guam to Greece, transporting 75000 barrels with shipping cost: 1332000
+From Puerto Miranda, Tanker Venture to UK, transporting 183750 barrels with shipping cost: 1160000
+From Puerto Miranda, Tanker Pretty World to Poland, transporting 135000 barrels with shipping cost: 1492000
+From Melkoya, Tanker Limerick to UK, transporting 183750 barrels with shipping cost: 373000
+From Melkoya, Tanker York Gulls to Greece, transporting 75000 barrels with shipping cost: 898000
+From Ceyhan, Tanker Lancaster to Greece, transporting 75000 barrels with shipping cost: 270000
+From Melkoya, Tanker PTI Volans to Poland, transporting 135000 barrels with shipping cost: 402000
+From Houma, Tanker Trinity to UK, transporting 183750 barrels with shipping cost: 1250000
+From Ceyhan, Tanker Galway to UK, transporting 183750 barrels with shipping cost: 1019000
+From Ceyhan, Tanker Glasgow to Spain, transporting 156250 barrels with shipping cost: 733000
+From Houma, Tanker Garonne to Poland, transporting 135000 barrels with shipping cost: 1604000
+From Houma, Tanker Torm Rhone to Spain, transporting 156250 barrels with shipping cost: 1451000
+From Ceyhan, Tanker Venus to Poland, transporting 135000 barrels with shipping cost: 1361000
