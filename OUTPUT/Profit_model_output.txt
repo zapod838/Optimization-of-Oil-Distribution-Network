@@ -1,0 +1,36 @@
+The objective value (Profit) is:  40242780.0
+Total Revenue:  198092780.0
+Total Crude Cost:  116050000.0
+Total Production Cost:  41800000.0
+Purchased 550000.0 barrels of Azeri BTC crude oil.
+Purchased 550000.0 barrels of Poseidon Streams crude oil.
+Purchased 550000.0 barrels of Laguna crude oil.
+Purchased 550000.0 barrels of Snøhvit Condensate crude oil.
+Produced 98000.0 barrels of Gasoline-87 in UK refinery.
+Produced 76000.0 barrels of Gasoline-87 in Spain refinery.
+Produced 22000.0 barrels of Gasoline-87 in Poland refinery.
+Produced 35000.0 barrels of Gasoline-87 in Greece refinery.
+Produced 52000.0 barrels of Gasoline-89 in UK refinery.
+Produced 103000.0 barrels of Gasoline-89 in Spain refinery.
+Produced 38000.0 barrels of Gasoline-89 in Poland refinery.
+Produced 45000.0 barrels of Gasoline-89 in Greece refinery.
+Produced 223000.0 barrels of Gasoline-92 in UK refinery.
+Produced 83000.0 barrels of Gasoline-92 in Spain refinery.
+Produced 60000.0 barrels of Gasoline-92 in Poland refinery.
+Produced 50000.0 barrels of Gasoline-92 in Greece refinery.
+Produced 127000.0 barrels of Jet fuel in UK refinery.
+Produced 47000.0 barrels of Jet fuel in Spain refinery.
+Produced 25000.0 barrels of Jet fuel in Poland refinery.
+Produced 20000.0 barrels of Jet fuel in Greece refinery.
+Produced 222000.0 barrels of Diesel fuel in UK refinery.
+Produced 286000.0 barrels of Diesel fuel in Spain refinery.
+Produced 190000.0 barrels of Diesel fuel in Poland refinery.
+Produced 125000.0 barrels of Diesel fuel in Greece refinery.
+Produced 13000.0 barrels of Heating oil in UK refinery.
+Produced 30000.0 barrels of Heating oil in Spain refinery.
+Produced 205000.0 barrels of Heating oil in Poland refinery.
+Produced 25000.0 barrels of Heating oil in Greece refinery.
+Crude oil transported from each port to UK refinery: 183750.0
+Crude oil transported from each port to Spain refinery: 156250.0
+Crude oil transported from each port to Poland refinery: 135000.0
+Crude oil transported from each port to Greece refinery: 75000.0
