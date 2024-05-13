@@ -30,7 +30,7 @@ The goal of this project was to enhance operational efficiencies within ABSA Oil
 To set up this project locally:
 
 ```bash
-git clone https://github.com/yourusername/optimization-oil-distribution.git
+git clone https://github.com/zapod838/optimization-oil-distribution.git
 cd optimization-oil-distribution
 pip install -r requirements.txt
 ```
