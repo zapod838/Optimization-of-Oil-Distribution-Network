@@ -9,12 +9,12 @@ The goal of this project was to enhance operational efficiencies within ABSA Oil
 ![Supply-chain-issues-in-petroleum-industry](https://github.com/user-attachments/assets/77639830-dd78-43dd-ac08-ff5f6e7d945a)
 
 
-### Project Approach
+## Project Approach
+
+The flowchart represents the iterative process involved in optimizing the oil distribution network for ABSA Oil refineries. This process can be broken down into the following key steps:
 
 ![Flowchart_updated](https://github.com/user-attachments/assets/7550079b-2d58-4af1-b3af-e8f4563ffdd0)
 
-
-The flowchart represents the iterative process involved in optimizing the oil distribution network for ABSA Oil refineries. This process can be broken down into the following key steps:
 
 1. **Dataset Preparation**: The process begins by leveraging a dataset comprising various variables such as purchasing variables (`purchase_vars`), production variables (`production_vars`), and crude shipping variables (`crude_shipping_vars`). These variables serve as the foundation for defining the decision variables used in optimization models.
 
