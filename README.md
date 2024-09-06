@@ -5,6 +5,7 @@ This repository contains the source code and documentation for the "Optimization
 ## Project Overview
 
 The goal of this project was to enhance operational efficiencies within ABSA Oil's distribution network. We developed several models to optimize different aspects of the supply chain, from raw material procurement to product delivery, ensuring cost-effectiveness and demand fulfillment.
+
 ![Supply-chain-issues-in-petroleum-industry](https://github.com/user-attachments/assets/77639830-dd78-43dd-ac08-ff5f6e7d945a)
 
 ## Technologies Used
