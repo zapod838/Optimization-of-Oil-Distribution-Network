@@ -8,6 +8,26 @@ The goal of this project was to enhance operational efficiencies within ABSA Oil
 
 ![Supply-chain-issues-in-petroleum-industry](https://github.com/user-attachments/assets/77639830-dd78-43dd-ac08-ff5f6e7d945a)
 
+
+### Project Approach
+
+![Flowchart_updated](https://github.com/user-attachments/assets/7550079b-2d58-4af1-b3af-e8f4563ffdd0)
+
+
+The flowchart represents the iterative process involved in optimizing the oil distribution network for ABSA Oil refineries. This process can be broken down into the following key steps:
+
+1. **Dataset Preparation**: The process begins by leveraging a dataset comprising various variables such as purchasing variables (`purchase_vars`), production variables (`production_vars`), and crude shipping variables (`crude_shipping_vars`). These variables serve as the foundation for defining the decision variables used in optimization models.
+
+2. **Defining Decision Variables**: The next step is defining decision variables, which are the variables we control in order to optimize the supply chain. These decision variables are based on the dataset and are crucial in formulating the optimization model. They represent choices that need to be optimized, such as how much crude oil to purchase, how to allocate production capacity, and how to schedule transportation.
+
+3. **Evaluate the Objective Function and Constraints**: After defining the decision variables, we evaluate them in relation to the objective function and constraints. This involves using optimization techniques (e.g., linear programming) to calculate cost-efficiency, profitability, and constraint satisfaction. Constraints might include refinery capacities, shipping limits, demand fulfillment, and other logistical considerations.
+
+4. **Optimality Check**: Once the evaluation is complete, the process checks if the solution is optimal. If the current decision variables satisfy all constraints and optimize the objective function (e.g., minimizing cost or maximizing profit), the process concludes.
+
+5. **Updating Decision Variables**: If optimality is not achieved, the decision variables are updated based on the feedback from the previous evaluation. This iterative loop continues until the solution is optimal, ensuring that the most efficient operational plan is identified.
+
+The flowchart provides a clear representation of this optimization cycle, ensuring that the process is efficient and systematic.
+
 ## Technologies Used
 
 - **Python**: Main programming language used for scripting and model development.
